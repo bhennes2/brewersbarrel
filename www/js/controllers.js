@@ -41,14 +41,16 @@ angular.module('starter.controllers', ['starter.services'])
   };
 })
 
-.controller('RecipesCtrl', function($scope, $stateParams) {
-  $scope.recipes = [
-    { title: 'Off Day IPA', id: 1 }
-  ];
+.controller('RecipesCtrl', function($scope, $stateParams, Recipe) {
+  $scope.recipes = Recipe.query();
+  // $scope.recipes = [
+  //   { title: 'Off Day IPA', id: 1 }
+  // ];
 })
 
-.controller('RecipeCtrl', function($scope, $stateParams) {
-  $scope.recipe = {
-    title: 'Off Day IPA'
-  }
+.controller('RecipeCtrl', function($scope, $stateParams, Recipe) {
+
+  var recipeId = $stateParams.recipeId;
+  $scope.recipe = Recipe.get({id: recipeId});
+
 });
