@@ -1,8 +1,7 @@
 {
   "name": "BrewersBarrel",
   "app_id": "e1fbc9c2",
-  "gulpStartupTasks": [
-  ],
+  "gulpStartupTasks": [],
   "watchPatterns": [
     "www/**/*",
     "!www/lib/**/*"

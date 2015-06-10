@@ -9,3 +9,13 @@
 .scroll-content, .item-complex .item-content, .item-radio .item-content {
   background: #FBF3E1;
 }
+
+.button.button-positive {
+  background: #ea4b25;
+  border-color: black;
+}
+
+.button.button-positive.activated {
+  background: #f6b1a1;
+  border-color: black;
+}
